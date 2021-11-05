@@ -1,10 +1,28 @@
 import "./styles.css";
+import { useState, useEffect } from 'react';
 
 export default function App() {
+
+  const [ count, setCount ] = useState(1);
+  const [ color, setColor ] = useState('black');
+
+  useEffect(() => {
+    count % 15 === 0 ?
+      setColor('yellow') :
+    count % 5 === 0 ?
+    setColor('green') :
+    count % 3 === 0 ?
+    setColor('red') :
+    setColor('black');
+  }, [count, color]);
+
+  function fizzBuzz() {
+    setCount(count + 1); 
+  }
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+      <p style={{color}}>{count}</p>
+      <button onClick={fizzBuzz}>Increment Count </button>
+   </div>
   );
 }
