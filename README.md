@@ -1,2 +1,6 @@
 # Practicing-React-Hooks
-Created with CodeSandbox
+This repository is for practicing react hooks. 
+
+Practiced following hooks:
+- useState
+- useEffect
