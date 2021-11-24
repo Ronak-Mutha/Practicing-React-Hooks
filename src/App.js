@@ -4,6 +4,7 @@ import PracticeUseReducer from "./PracticeUseReducer";
 import PracticeUseEffect from "./PracticeUseEffect";
 import PracticeUseRef from "./PracticeUseRef";
 import PracticeUseLayoutEffect from "./PracticeUseLayoutEffect";
+import PracticeUseImperativeHandle from "./PracticeUseImperativeHandle";
 
 export default function App() {
   return (
@@ -14,11 +15,13 @@ export default function App() {
       <h2> useReducer Hook </h2>
       <PracticeUseReducer />
       <h2> useEffect Hook </h2>
-      <PracticeUseEffect /> */}
+      <PracticeUseEffect /> 
       <h2> useRef Hook </h2>
       <PracticeUseRef />
       <h2> useLayoutEffect Hook </h2>
-      <PracticeUseLayoutEffect />
+      <PracticeUseLayoutEffect /> */}
+      <h2> useImperativeHandle Hook </h2>
+      <PracticeUseImperativeHandle />
     </div>
   );
 }
