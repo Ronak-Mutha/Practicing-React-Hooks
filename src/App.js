@@ -7,6 +7,7 @@ import PracticeUseLayoutEffect from "./PracticeUseLayoutEffect";
 import PracticeUseImperativeHandle from "./PracticeUseImperativeHandle";
 import PracticeUseContext from "./PracticeUseContext";
 import PracticeUseMemo from "./PracticeUseMemo";
+import PracticeUseCallback from "./PracticeUseCallback";
 
 export default function App() {
   return (
@@ -25,9 +26,11 @@ export default function App() {
       <h2> useImperativeHandle Hook </h2>
       <PracticeUseImperativeHandle />
       <h2> useContext Hook </h2>
-      <PracticeUseContext /> */}
+      <PracticeUseContext /> 
       <h2> useMemo Hook </h2>
-      <PracticeUseMemo />
+      <PracticeUseMemo /> */}
+      <h2> useCallback Hook </h2>
+      <PracticeUseCallback />
     </div>
   );
 }
