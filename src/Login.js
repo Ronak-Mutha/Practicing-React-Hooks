@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "./PracticeUseContext";
 
-export default function Login({ setUsername }) {
+export default function Login() {
+  const { setUsername } = useContext(AppContext);
   return (
     <div>
       <input
-        onChange={() => {
+        onChange={(event) => {
           setUsername(event.target.value);
         }}
       />
