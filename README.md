@@ -6,3 +6,9 @@ Practiced following hooks:
 
 - useState
 - useEffect
+- useReducer
+- useRef
+- useLayoutEffect
+- useMemo
+- useCallback
+- useImperativeHandle
